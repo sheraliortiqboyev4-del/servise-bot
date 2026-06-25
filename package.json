@@ -1,0 +1,22 @@
+{
+  "name": "truck-bot",
+  "version": "1.0.0",
+  "description": "Truck service request Telegram bot (Driver/Worker workflow)",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "migrate": "node src/db/migrate.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "pg": "^8.11.5",
+    "node-cron": "^3.0.3",
+    "exceljs": "^4.4.0",
+    "dotenv": "^16.4.5"
+  }
+}
